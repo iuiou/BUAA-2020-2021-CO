@@ -1,0 +1,500 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: BlockChecker.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BlockChecker.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BlockChecker"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : BlockChecker
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\verilog\blockchecker\BlockChecker.v" into library work
+Parsing module <BlockChecker>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <BlockChecker>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BlockChecker>.
+    Related source file is "D:\verilog\blockchecker\BlockChecker.v".
+    Found 1-bit register for signal <result>.
+    Found 32-bit register for signal <state>.
+    Found 32-bit register for signal <cnt>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 38                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000000000000000000000000000000               |
+    | Power Up State     | 00000000000000000000000000000000               |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit subtractor for signal <cnt[31]_GND_1_o_sub_31_OUT> created at line 72.
+    Found 32-bit subtractor for signal <state[31]_GND_1_o_sub_70_OUT> created at line 102.
+    Found 32-bit adder for signal <cnt[31]_GND_1_o_add_45_OUT> created at line 90.
+    Found 32-bit adder for signal <state[31]_GND_1_o_add_65_OUT> created at line 99.
+    Found 32-bit comparator lessequal for signal <n0023> created at line 72
+    Found 32-bit comparator lessequal for signal <n0050> created at line 99
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <BlockChecker> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 32-bit register                                       : 1
+# Comparators                                          : 2
+ 32-bit comparator lessequal                           : 2
+# Multiplexers                                         : 8
+ 32-bit 2-to-1 multiplexer                             : 8
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+# Comparators                                          : 2
+ 32-bit comparator lessequal                           : 2
+# Multiplexers                                         : 8
+ 32-bit 2-to-1 multiplexer                             : 8
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:4]> with sequential encoding.
+----------------------------------------------
+ State                            | Encoding
+----------------------------------------------
+ 00000000000000000000000000000000 | 0000
+ 00000000000000000000000000001001 | 0001
+ 00000000000000000000000000000110 | 0010
+ 00000000000000000000000000000001 | 0011
+ 00000000000000000000000000000010 | 0100
+ 00000000000000000000000000000011 | 0101
+ 00000000000000000000000000000100 | 0110
+ 00000000000000000000000000000101 | 0111
+ 00000000000000000000000000000111 | 1000
+ 00000000000000000000000000001000 | 1001
+----------------------------------------------
+
+Optimizing unit <BlockChecker> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BlockChecker, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BlockChecker.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 405
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 31
+#      LUT2                        : 2
+#      LUT3                        : 5
+#      LUT4                        : 33
+#      LUT5                        : 50
+#      LUT6                        : 85
+#      MUXCY                       : 100
+#      VCC                         : 1
+#      XORCY                       : 96
+# FlipFlops/Latches                : 37
+#      FDC                         : 36
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 9
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              37  out of  126800     0%  
+ Number of Slice LUTs:                  207  out of  63400     0%  
+    Number used as Logic:               207  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    210
+   Number with an unused Flip Flop:     173  out of    210    82%  
+   Number with an unused LUT:             3  out of    210     1%  
+   Number of fully used LUT-FF pairs:    34  out of    210    16%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    210     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 37    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.289ns (Maximum Frequency: 137.195MHz)
+   Minimum input arrival time before clock: 7.375ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.289ns (frequency: 137.195MHz)
+  Total number of paths / destination ports: 2148004 / 37
+-------------------------------------------------------------------------
+Delay:               7.289ns (Levels of Logic = 40)
+  Source:            cnt_1 (FF)
+  Destination:       result (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cnt_1 to result
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.361   0.693  cnt_1 (cnt_1)
+     LUT5:I0->O            1   0.097   0.000  Mcompar_cnt[31]_GND_1_o_LessThan_30_o_lut<0> (Mcompar_cnt[31]_GND_1_o_LessThan_30_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<0> (Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<1> (Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<2> (Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<3> (Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<4> (Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<5> (Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<5>)
+     MUXCY:CI->O           1   0.253   0.295  Mcompar_cnt[31]_GND_1_o_LessThan_30_o_cy<6> (cnt[31]_GND_1_o_LessThan_30_o)
+     LUT6:I5->O            1   0.097   0.000  Mmux_n0095_rs_lut<0> (Mmux_n0095_rs_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mmux_n0095_rs_cy<0> (Mmux_n0095_rs_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<1> (Mmux_n0095_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<2> (Mmux_n0095_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<3> (Mmux_n0095_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<4> (Mmux_n0095_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<5> (Mmux_n0095_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<6> (Mmux_n0095_rs_cy<6>)
+     XORCY:CI->O           4   0.370   0.309  Mmux_n0095_rs_xor<7> (n0095<7>)
+     LUT1:I0->O            1   0.097   0.000  Madd_state[31]_GND_1_o_add_65_OUT_cy<7>_rt (Madd_state[31]_GND_1_o_add_65_OUT_cy<7>_rt)
+     MUXCY:S->O            1   0.353   0.000  Madd_state[31]_GND_1_o_add_65_OUT_cy<7> (Madd_state[31]_GND_1_o_add_65_OUT_cy<7>)
+     XORCY:CI->O           3   0.370   0.305  Madd_state[31]_GND_1_o_add_65_OUT_xor<8> (state[31]_GND_1_o_add_65_OUT<8>)
+     LUT6:I5->O            1   0.097   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_lut<8> (Msub_state[31]_GND_1_o_sub_70_OUT_lut<8>)
+     MUXCY:S->O            1   0.353   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<8> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<9> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<10> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<11> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<12> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<13> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<14> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<15> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<16> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<17> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<18> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<19> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<20> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<21> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<22> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<22>)
+     XORCY:CI->O           1   0.370   0.295  Msub_state[31]_GND_1_o_sub_70_OUT_xor<23> (state[31]_GND_1_o_sub_70_OUT<23>)
+     LUT4:I3->O            2   0.097   0.697  Mmux_state[31]_state[31]_mux_70_OUT161 (state[31]_state[31]_mux_70_OUT<23>)
+     LUT6:I0->O            1   0.097   0.295  state[31]_GND_1_o_equal_72_o<31>3 (state[31]_GND_1_o_equal_72_o<31>2)
+     LUT6:I5->O            1   0.097   0.000  state[31]_GND_1_o_equal_72_o<31>7 (state[31]_GND_1_o_equal_72_o)
+     FDP:D                     0.008          result
+    ----------------------------------------
+    Total                      7.289ns (4.398ns logic, 2.891ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 361448 / 74
+-------------------------------------------------------------------------
+Offset:              7.375ns (Levels of Logic = 36)
+  Source:            in<2> (PAD)
+  Destination:       result (FF)
+  Destination Clock: clk rising
+
+  Data Path: in<2> to result
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.001   0.539  in_2_IBUF (in_2_IBUF)
+     LUT3:I0->O            1   0.097   0.295  in[7]_GND_1_o_equal_29_o<7>_SW0 (N5)
+     LUT6:I5->O            4   0.097   0.570  in[7]_GND_1_o_equal_29_o<7> (in[7]_GND_1_o_equal_29_o)
+     LUT4:I0->O            1   0.097   0.556  Mmux_n0095_B11_SW0 (N9)
+     LUT6:I2->O            1   0.097   0.000  Mmux_n0095_rs_lut<0> (Mmux_n0095_rs_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mmux_n0095_rs_cy<0> (Mmux_n0095_rs_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<1> (Mmux_n0095_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<2> (Mmux_n0095_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<3> (Mmux_n0095_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<4> (Mmux_n0095_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<5> (Mmux_n0095_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mmux_n0095_rs_cy<6> (Mmux_n0095_rs_cy<6>)
+     XORCY:CI->O           4   0.370   0.309  Mmux_n0095_rs_xor<7> (n0095<7>)
+     LUT1:I0->O            1   0.097   0.000  Madd_state[31]_GND_1_o_add_65_OUT_cy<7>_rt (Madd_state[31]_GND_1_o_add_65_OUT_cy<7>_rt)
+     MUXCY:S->O            1   0.353   0.000  Madd_state[31]_GND_1_o_add_65_OUT_cy<7> (Madd_state[31]_GND_1_o_add_65_OUT_cy<7>)
+     XORCY:CI->O           3   0.370   0.305  Madd_state[31]_GND_1_o_add_65_OUT_xor<8> (state[31]_GND_1_o_add_65_OUT<8>)
+     LUT6:I5->O            1   0.097   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_lut<8> (Msub_state[31]_GND_1_o_sub_70_OUT_lut<8>)
+     MUXCY:S->O            1   0.353   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<8> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<9> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<10> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<11> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<12> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<13> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<14> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<15> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<16> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<17> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<18> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<19> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<20> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<21> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_state[31]_GND_1_o_sub_70_OUT_cy<22> (Msub_state[31]_GND_1_o_sub_70_OUT_cy<22>)
+     XORCY:CI->O           1   0.370   0.295  Msub_state[31]_GND_1_o_sub_70_OUT_xor<23> (state[31]_GND_1_o_sub_70_OUT<23>)
+     LUT4:I3->O            2   0.097   0.697  Mmux_state[31]_state[31]_mux_70_OUT161 (state[31]_state[31]_mux_70_OUT<23>)
+     LUT6:I0->O            1   0.097   0.295  state[31]_GND_1_o_equal_72_o<31>3 (state[31]_GND_1_o_equal_72_o<31>2)
+     LUT6:I5->O            1   0.097   0.000  state[31]_GND_1_o_equal_72_o<31>7 (state[31]_GND_1_o_equal_72_o)
+     FDP:D                     0.008          result
+    ----------------------------------------
+    Total                      7.375ns (3.511ns logic, 3.864ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            result (FF)
+  Destination:       result (PAD)
+  Source Clock:      clk rising
+
+  Data Path: result to result
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.361   0.279  result (result_OBUF)
+     OBUF:I->O                 0.000          result_OBUF (result)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.289|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.53 secs
+ 
+--> 
+
+Total memory usage is 4625884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

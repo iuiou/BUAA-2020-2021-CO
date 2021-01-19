@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/verilog/DNA/DNA.xst" -ofn "D:/verilog/DNA/DNA.syr" 
+xst -intstyle ise -ifn "D:/verilog/DNA/DNA.xst" -ofn "D:/verilog/DNA/DNA.syr" 
+xst -intstyle ise -ifn "D:/verilog/DNA/DNA.xst" -ofn "D:/verilog/DNA/DNA.syr" 

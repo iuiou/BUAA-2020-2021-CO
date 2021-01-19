@@ -1,0 +1,31 @@
+ISim log file
+Running: D:\verilog\P7\test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/verilog/P7/test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                  85@00004180: $12 <= 00000002
+                  95@00004184: $13 <= 00000028
+                 105@00004188: $14 <= 00003000
+                 115@0000418c: $14 <= 00003004
+                 195@00004180: $12 <= 00000002
+                 205@00004184: $13 <= 00000028
+                 215@00004188: $14 <= 00003004
+                 225@0000418c: $14 <= 00003008
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                  85@00004180: $12 <= 00000002
+                  95@00004184: $13 <= 00000028
+                 105@00004188: $14 <= 00003000
+                 115@0000418c: $14 <= 00003004
+                 195@00004180: $12 <= 00000002
+                 205@00004184: $13 <= 00000028
+                 215@00004188: $14 <= 00003004
+                 225@0000418c: $14 <= 00003008
+Stopped at time : 100100 ns : File "D:/verilog/P7/test.v" Line 21

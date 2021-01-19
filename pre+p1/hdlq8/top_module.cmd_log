@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/verilog/hdlq8/top_module.xst" -ofn "D:/verilog/hdlq8/top_module.syr" 
+xst -intstyle ise -ifn "D:/verilog/hdlq8/top_module.xst" -ofn "D:/verilog/hdlq8/top_module.syr" 
+xst -intstyle ise -ifn "D:/verilog/hdlq8/top_module.xst" -ofn "D:/verilog/hdlq8/top_module.syr" 
+xst -intstyle ise -ifn "D:/verilog/hdlq8/top_module.xst" -ofn "D:/verilog/hdlq8/top_module.syr" 
+xst -intstyle ise -ifn "D:/verilog/hdlq8/top_module.xst" -ofn "D:/verilog/hdlq8/top_module.syr" 
+xst -intstyle ise -ifn "D:/verilog/hdlq8/top_module.xst" -ofn "D:/verilog/hdlq8/top_module.syr" 

@@ -1,0 +1,1155 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\verilog\P7\control.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <control>.
+Analyzing Verilog file "D:\verilog\P7\get_tuse.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <get_tuse>.
+Analyzing Verilog file "D:\verilog\P7\get_tnew.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <get_tnew>.
+Analyzing Verilog file "D:\verilog\P7\trans.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <trans>.
+Analyzing Verilog file "D:\verilog\P7\stall_control.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <stall_control>.
+Analyzing Verilog file "D:\verilog\P7\nPC.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <nPC>.
+Analyzing Verilog file "D:\verilog\P7\mult_div.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <mult_div>.
+Analyzing Verilog file "D:\verilog\P7\mem_wb.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <mem_wb>.
+Analyzing Verilog file "D:\verilog\P7\if_id.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <if_id>.
+Analyzing Verilog file "D:\verilog\P7\IFU.v" into library work
+Parsing module <IFU>.
+Analyzing Verilog file "D:\verilog\P7\id_ex.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <id_ex>.
+Analyzing Verilog file "D:\verilog\P7\GRF.v" into library work
+Parsing module <GRF>.
+Analyzing Verilog file "D:\verilog\P7\ex_mem.v" into library work
+Parsing module <ex_mem>.
+Analyzing Verilog file "D:\verilog\P7\DM.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <DM>.
+Analyzing Verilog file "D:\verilog\P7\CP0.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <CP0>.
+Analyzing Verilog file "D:\verilog\P7\ALU.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <ALU>.
+Analyzing Verilog file "D:\verilog\P7\TC2.v" into library work
+Parsing module <TC2>.
+Analyzing Verilog file "D:\verilog\P7\TC1.v" into library work
+Parsing module <TC1>.
+Analyzing Verilog file "D:\verilog\P7\CPU.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <CPU>.
+Analyzing Verilog file "D:\verilog\P7\mips.v" into library work
+Parsing module <mips>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mips>.
+
+Elaborating module <CPU>.
+
+Elaborating module <IFU>.
+Reading initialization file \"code.txt\".
+WARNING:HDLCompiler:1670 - "D:\verilog\P7\IFU.v" Line 38: Signal <IM> in initial block is partially initialized.
+Reading initialization file \"code_handler.txt\".
+WARNING:HDLCompiler:1670 - "D:\verilog\P7\IFU.v" Line 39: Signal <IM> in initial block is partially initialized.
+
+Elaborating module <if_id>.
+
+Elaborating module <control>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\control.v" Line 85: Assignment to rd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\if_id.v" Line 48: Assignment to lb ignored, since the identifier is never used
+
+Elaborating module <GRF>.
+"D:\verilog\P7\GRF.v" Line 47. $display  32'b................................ 5'b..... 32'b................................
+
+Elaborating module <nPC>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\nPC.v" Line 36: Assignment to lb ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P7\nPC.v" Line 48: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <id_ex>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\id_ex.v" Line 62: Assignment to mult ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P7\id_ex.v" Line 95: Result of 32-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <ALU>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\ALU.v" Line 40: Assignment to mult ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P7\ALU.v" Line 78: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <mult_div>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\mult_div.v" Line 36: Assignment to lb ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P7\mult_div.v" Line 51: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\CPU.v" Line 156: Assignment to lb ignored, since the identifier is never used
+
+Elaborating module <ex_mem>.
+
+Elaborating module <DM>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\DM.v" Line 42: Assignment to add ignored, since the identifier is never used
+"D:\verilog\P7\DM.v" Line 77. $display  32'b................................ 32'b..............................00 32'b................................
+
+Elaborating module <mem_wb>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\mem_wb.v" Line 52: Assignment to sb ignored, since the identifier is never used
+
+Elaborating module <stall_control>.
+
+Elaborating module <get_tuse>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\get_tuse.v" Line 30: Assignment to lui ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P7\get_tuse.v" Line 32: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P7\get_tuse.v" Line 35: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <get_tnew>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\get_tnew.v" Line 30: Assignment to sb ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P7\get_tnew.v" Line 32: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <trans>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 44: Assignment to id_lb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 45: Assignment to id_lbu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 46: Assignment to id_lh ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 47: Assignment to id_lhu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 48: Assignment to id_lw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 49: Assignment to id_sb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 50: Assignment to id_sh ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 51: Assignment to id_sw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 52: Assignment to id_add ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 53: Assignment to id_addu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 54: Assignment to id_subu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 55: Assignment to id_sub ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 56: Assignment to id_mult ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 57: Assignment to id_multu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 58: Assignment to id_div ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 59: Assignment to id_divu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 60: Assignment to id_sll ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 61: Assignment to id_srl ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 62: Assignment to id_sra ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 63: Assignment to id_sllv ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 64: Assignment to id_srlv ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 65: Assignment to id_srav ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 66: Assignment to id_And ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 67: Assignment to id_Or ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 68: Assignment to id_Xor ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 69: Assignment to id_Nor ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 70: Assignment to id_addi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 71: Assignment to id_addiu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 72: Assignment to id_andi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 73: Assignment to id_ori ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 74: Assignment to id_xori ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 75: Assignment to id_lui ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 76: Assignment to id_slt ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 77: Assignment to id_slti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 78: Assignment to id_sltiu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 79: Assignment to id_sltu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 86: Assignment to id_j ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 87: Assignment to id_jal ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 90: Assignment to id_mfhi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 91: Assignment to id_mflo ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 92: Assignment to id_mthi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 93: Assignment to id_mtlo ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 95: Assignment to id_mtc0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 96: Assignment to id_mfc0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 97: Assignment to id_wrong ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 132: Assignment to ex_lui ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 137: Assignment to ex_beq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 138: Assignment to ex_bne ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 139: Assignment to ex_blez ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 140: Assignment to ex_bgtz ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 141: Assignment to ex_bltz ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 142: Assignment to ex_bgez ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 143: Assignment to ex_j ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 146: Assignment to ex_jr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 147: Assignment to ex_mfhi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 148: Assignment to ex_mflo ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 151: Assignment to ex_eret ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 154: Assignment to ex_wrong ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 158: Assignment to mem_lb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 159: Assignment to mem_lbu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 160: Assignment to mem_lh ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 161: Assignment to mem_lhu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 162: Assignment to mem_lw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 170: Assignment to mem_mult ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 171: Assignment to mem_multu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 172: Assignment to mem_div ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 173: Assignment to mem_divu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 194: Assignment to mem_beq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 195: Assignment to mem_bne ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 196: Assignment to mem_blez ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 197: Assignment to mem_bgtz ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 198: Assignment to mem_bltz ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 199: Assignment to mem_bgez ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 200: Assignment to mem_j ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 203: Assignment to mem_jr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 206: Assignment to mem_mthi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 207: Assignment to mem_mtlo ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 208: Assignment to mem_eret ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 209: Assignment to mem_mtc0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 211: Assignment to mem_wrong ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 220: Assignment to wb_sb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 221: Assignment to wb_sh ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 222: Assignment to wb_sw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 227: Assignment to wb_mult ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 228: Assignment to wb_multu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 229: Assignment to wb_div ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 230: Assignment to wb_divu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 251: Assignment to wb_beq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 252: Assignment to wb_bne ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 253: Assignment to wb_blez ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 254: Assignment to wb_bgtz ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 255: Assignment to wb_bltz ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 256: Assignment to wb_bgez ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 257: Assignment to wb_j ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 260: Assignment to wb_jr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 263: Assignment to wb_mthi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 264: Assignment to wb_mtlo ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 265: Assignment to wb_eret ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 266: Assignment to wb_mtc0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\trans.v" Line 268: Assignment to wb_wrong ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P7\trans.v" Line 310: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P7\trans.v" Line 319: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P7\trans.v" Line 333: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <CP0>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P7\CP0.v" Line 47: Assignment to lb ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P7\CP0.v" Line 49: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P7\CP0.v" Line 79: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P7\CPU.v" Line 295: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P7\CPU.v" Line 298: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P7\CPU.v" Line 300: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P7\CPU.v" Line 304: Result of 32-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <TC1>.
+
+Elaborating module <TC2>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mips>.
+    Related source file is "D:\verilog\P7\mips.v".
+    Found 32-bit comparator lessequal for signal <n0001> created at line 62
+    Found 32-bit comparator lessequal for signal <n0005> created at line 64
+    Summary:
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <mips> synthesized.
+
+Synthesizing Unit <CPU>.
+    Related source file is "D:\verilog\P7\CPU.v".
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <lb> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <lbu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <lh> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <lhu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <lw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sb> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sh> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <add> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <addu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <subu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sub> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <mult> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <multu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <div> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <divu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sll> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <srl> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sra> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sllv> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <srlv> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <srav> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <And> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <Or> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <Xor> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <Nor> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <addi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <addiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <andi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <ori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <xori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <lui> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <slt> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <slti> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sltiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <sltu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <beq> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <bne> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <blez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <bgtz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <bltz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <bgez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <j> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <jal> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <jalr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <jr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <mthi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <mtlo> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <eret> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <mfc0> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <mtc0> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\CPU.v" line 154: Output port <wrong> of the instance <Control> is unconnected or connected to loadless signal.
+    Found 32-bit subtractor for signal <be_ex_cp0_out[31]_GND_2_o_sub_42_OUT> created at line 287.
+    Found 32-bit adder for signal <ex_PC[31]_GND_2_o_add_18_OUT> created at line 273.
+    Found 32-bit 4-to-1 multiplexer for signal <RD1> created at line 71.
+    Found 32-bit 4-to-1 multiplexer for signal <RD2> created at line 71.
+    Found 32-bit 4-to-1 multiplexer for signal <ex_RD1> created at line 100.
+    Found 32-bit 4-to-1 multiplexer for signal <ex_RD2> created at line 100.
+    Found 32-bit 4-to-1 multiplexer for signal <ex_cp0_out> created at line 126.
+    Found 32-bit comparator lessequal for signal <n0006> created at line 188
+    Found 32-bit comparator lessequal for signal <n0008> created at line 188
+    Found 32-bit comparator lessequal for signal <n0011> created at line 188
+    Found 32-bit comparator lessequal for signal <n0013> created at line 188
+    Found 32-bit comparator greater for signal <PC[31]_GND_2_o_LessThan_49_o> created at line 295
+    Found 32-bit comparator greater for signal <GND_2_o_PC[31]_LessThan_50_o> created at line 295
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <CPU> synthesized.
+
+Synthesizing Unit <IFU>.
+    Related source file is "D:\verilog\P7\IFU.v".
+WARNING:Xst:2999 - Signal 'IM', unconnected in block 'IFU', is tied to its initial value.
+    Found 4096x32-bit single-port Read Only RAM <Mram_IM> for signal <IM>.
+    Found 32-bit register for signal <pc>.
+    Found 32-bit subtractor for signal <true_PC> created at line 42.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <IFU> synthesized.
+
+Synthesizing Unit <if_id>.
+    Related source file is "D:\verilog\P7\if_id.v".
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <lb> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <lbu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <lh> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <lhu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <lw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sb> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sh> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <add> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <addu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <subu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sub> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sll> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <srl> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sra> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sllv> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <srlv> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <srav> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <And> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <Or> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <Xor> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <Nor> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <addi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <addiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <andi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <ori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <xori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <lui> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <slt> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <slti> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sltiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <sltu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <beq> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <bne> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <blez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <bgtz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <bltz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <bgez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <j> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <jal> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <jalr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <jr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <eret> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <mfc0> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\if_id.v" line 46: Output port <mtc0> of the instance <Control> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <IR>.
+    Found 5-bit register for signal <if_id_exccode>.
+    Found 1-bit register for signal <if_id_delay>.
+    Found 1-bit register for signal <hi_lo>.
+    Found 32-bit register for signal <if_id_PC>.
+    Summary:
+	inferred  71 D-type flip-flop(s).
+Unit <if_id> synthesized.
+
+Synthesizing Unit <control>.
+    Related source file is "D:\verilog\P7\control.v".
+    Summary:
+	no macro.
+Unit <control> synthesized.
+
+Synthesizing Unit <GRF>.
+    Related source file is "D:\verilog\P7\GRF.v".
+WARNING:Xst:647 - Input <PC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1024-bit register for signal <n0056[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <RA1[4]_Reg[31][31]_wide_mux_41_OUT> created at line 54.
+    Found 32-bit 32-to-1 multiplexer for signal <RA2[4]_Reg[31][31]_wide_mux_45_OUT> created at line 55.
+    Found 5-bit comparator equal for signal <WA[4]_RA1[4]_equal_40_o> created at line 54
+    Found 5-bit comparator equal for signal <WA[4]_RA2[4]_equal_44_o> created at line 55
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  36 Multiplexer(s).
+Unit <GRF> synthesized.
+
+Synthesizing Unit <nPC>.
+    Related source file is "D:\verilog\P7\nPC.v".
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <lb> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <lbu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <lh> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <lhu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <lw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sb> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sh> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <add> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <addu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <subu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sub> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <mult> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <multu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <div> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <divu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sll> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <srl> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sra> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sllv> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <srlv> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <srav> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <And> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <Or> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <Xor> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <Nor> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <addi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <addiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <andi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <ori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <xori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <lui> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <slt> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <slti> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sltiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <sltu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <mfhi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <mflo> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <mthi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <mtlo> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <mfc0> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <mtc0> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\nPC.v" line 34: Output port <wrong> of the instance <Control> is unconnected or connected to loadless signal.
+    Found 32-bit adder for signal <n0093> created at line 57.
+    Found 32-bit adder for signal <id_PC[31]_GND_7_o_add_24_OUT> created at line 57.
+    Found 32-bit adder for signal <PC[31]_GND_7_o_add_26_OUT> created at line 59.
+    Found 32-bit 7-to-1 multiplexer for signal <nPC> created at line 30.
+    Found 32-bit comparator equal for signal <RD1[31]_RD2[31]_equal_7_o> created at line 48
+    Found 32-bit comparator greater for signal <n0016> created at line 50
+    Found 32-bit comparator greater for signal <GND_7_o_RD1[31]_LessThan_11_o> created at line 52
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <nPC> synthesized.
+
+Synthesizing Unit <id_ex>.
+    Related source file is "D:\verilog\P7\id_ex.v".
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <mult> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <multu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <div> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <divu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <lui> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <beq> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <bne> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <blez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <bgtz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <bltz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <bgez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <j> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <jr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <mthi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <mtlo> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <mfc0> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\id_ex.v" line 60: Output port <wrong> of the instance <Control> is unconnected or connected to loadless signal.
+    Found 5-bit register for signal <id_ex_exccode>.
+    Found 32-bit register for signal <id_ex_RD1>.
+    Found 32-bit register for signal <id_ex_RD2>.
+    Found 32-bit register for signal <imm>.
+    Found 5-bit register for signal <id_ex_WA>.
+    Found 32-bit register for signal <id_ex_IR>.
+    Found 1-bit register for signal <id_ex_delay>.
+    Found 1-bit register for signal <id_ex_cgcp0>.
+    Found 32-bit register for signal <id_ex_cp0_out>.
+    Found 32-bit register for signal <id_ex_PC>.
+    Found 32-bit 4-to-1 multiplexer for signal <n0094> created at line 95.
+    Summary:
+	inferred 204 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <id_ex> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\verilog\P7\ALU.v".
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <mult> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <multu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <div> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <divu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <addiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <beq> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <bne> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <blez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <bgtz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <bltz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <bgez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <j> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <jr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <mfhi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <mflo> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <mthi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <mtlo> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <eret> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\ALU.v" line 38: Output port <wrong> of the instance <Control> is unconnected or connected to loadless signal.
+    Found 33-bit subtractor for signal <minus> created at line 62.
+    Found 32-bit subtractor for signal <A[31]_B[31]_sub_42_OUT> created at line 75.
+    Found 33-bit adder for signal <plus> created at line 63.
+    Found 32-bit adder for signal <PC[31]_GND_9_o_add_20_OUT> created at line 66.
+    Found 32-bit adder for signal <A[31]_B[31]_add_43_OUT> created at line 76.
+    Found 32-bit shifter logical right for signal <A[31]_B[4]_shift_right_22_OUT> created at line 68
+    Found 32-bit shifter arithmetic right for signal <A[31]_B[4]_shift_right_23_OUT> created at line 68
+    Found 32-bit shifter logical left for signal <A[31]_B[4]_shift_left_26_OUT> created at line 69
+    Found 32-bit 4-to-1 multiplexer for signal <B> created at line 32.
+    Found 32-bit 12-to-1 multiplexer for signal <A[31]_A[31]_mux_52_OUT> created at line 68.
+    Found 32-bit comparator greater for signal <B[31]_A[31]_LessThan_29_o> created at line 70
+    Found 32-bit comparator greater for signal <A[31]_B[31]_LessThan_30_o> created at line 70
+    Found 1-bit comparator not equal for signal <n0087> created at line 78
+    Found 1-bit comparator not equal for signal <n0090> created at line 78
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred  22 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <mult_div>.
+    Related source file is "D:\verilog\P7\mult_div.v".
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <lb> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <lbu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <lh> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <lhu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <lw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sb> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sh> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <add> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <addu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <subu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sub> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sll> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <srl> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sra> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sllv> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <srlv> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <srav> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <And> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <Or> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <Xor> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <Nor> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <addi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <addiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <andi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <ori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <xori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <lui> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <slt> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <slti> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sltiu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <sltu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <beq> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <bne> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <blez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <bgtz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <bltz> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <bgez> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <j> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <jal> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <jalr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <jr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <mfhi> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <mflo> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <eret> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <mfc0> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <mtc0> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P7\mult_div.v" line 34: Output port <wrong> of the instance <Control> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <hi>.
+    Found 32-bit register for signal <lo>.
+    Found 4-bit register for signal <cnt>.
+    Found 4-bit subtractor for signal <GND_10_o_GND_10_o_sub_3_OUT<3:0>> created at line 51.
+    Found 32x32-bit multiplier for signal <A[31]_B[31]_MuLt_3_OUT> created at line 55.
+    Found 32x32-bit multiplier for signal <A[31]_B[31]_MuLt_4_OUT> created at line 59.
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  68 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+Unit <mult_div> synthesized.
+
+Synthesizing Unit <div_32s_32s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 32-bit subtractor for signal <b[31]_unary_minus_3_OUT> created at line 0.
+    Found 64-bit adder for signal <n3514> created at line 0.
+    Found 64-bit adder for signal <GND_13_o_b[31]_add_5_OUT> created at line 0.
+    Found 63-bit adder for signal <n3518> created at line 0.
+    Found 63-bit adder for signal <GND_13_o_b[31]_add_7_OUT> created at line 0.
+    Found 62-bit adder for signal <n3522> created at line 0.
+    Found 62-bit adder for signal <GND_13_o_b[31]_add_9_OUT> created at line 0.
+    Found 61-bit adder for signal <n3526> created at line 0.
+    Found 61-bit adder for signal <GND_13_o_b[31]_add_11_OUT> created at line 0.
+    Found 60-bit adder for signal <n3530> created at line 0.
+    Found 60-bit adder for signal <GND_13_o_b[31]_add_13_OUT> created at line 0.
+    Found 59-bit adder for signal <n3534> created at line 0.
+    Found 59-bit adder for signal <GND_13_o_b[31]_add_15_OUT> created at line 0.
+    Found 58-bit adder for signal <n3538> created at line 0.
+    Found 58-bit adder for signal <GND_13_o_b[31]_add_17_OUT> created at line 0.
+    Found 57-bit adder for signal <n3542> created at line 0.
+    Found 57-bit adder for signal <GND_13_o_b[31]_add_19_OUT> created at line 0.
+    Found 56-bit adder for signal <n3546> created at line 0.
+    Found 56-bit adder for signal <GND_13_o_b[31]_add_21_OUT> created at line 0.
+    Found 55-bit adder for signal <n3550> created at line 0.
+    Found 55-bit adder for signal <GND_13_o_b[31]_add_23_OUT> created at line 0.
+    Found 54-bit adder for signal <n3554> created at line 0.
+    Found 54-bit adder for signal <GND_13_o_b[31]_add_25_OUT> created at line 0.
+    Found 53-bit adder for signal <n3558> created at line 0.
+    Found 53-bit adder for signal <GND_13_o_b[31]_add_27_OUT> created at line 0.
+    Found 52-bit adder for signal <n3562> created at line 0.
+    Found 52-bit adder for signal <GND_13_o_b[31]_add_29_OUT> created at line 0.
+    Found 51-bit adder for signal <n3566> created at line 0.
+    Found 51-bit adder for signal <GND_13_o_b[31]_add_31_OUT> created at line 0.
+    Found 50-bit adder for signal <n3570> created at line 0.
+    Found 50-bit adder for signal <GND_13_o_b[31]_add_33_OUT> created at line 0.
+    Found 49-bit adder for signal <n3574> created at line 0.
+    Found 49-bit adder for signal <GND_13_o_b[31]_add_35_OUT> created at line 0.
+    Found 48-bit adder for signal <n3578> created at line 0.
+    Found 48-bit adder for signal <GND_13_o_b[31]_add_37_OUT> created at line 0.
+    Found 47-bit adder for signal <n3582> created at line 0.
+    Found 47-bit adder for signal <GND_13_o_b[31]_add_39_OUT> created at line 0.
+    Found 46-bit adder for signal <n3586> created at line 0.
+    Found 46-bit adder for signal <GND_13_o_b[31]_add_41_OUT> created at line 0.
+    Found 45-bit adder for signal <n3590> created at line 0.
+    Found 45-bit adder for signal <GND_13_o_b[31]_add_43_OUT> created at line 0.
+    Found 44-bit adder for signal <n3594> created at line 0.
+    Found 44-bit adder for signal <GND_13_o_b[31]_add_45_OUT> created at line 0.
+    Found 43-bit adder for signal <n3598> created at line 0.
+    Found 43-bit adder for signal <GND_13_o_b[31]_add_47_OUT> created at line 0.
+    Found 42-bit adder for signal <n3602> created at line 0.
+    Found 42-bit adder for signal <GND_13_o_b[31]_add_49_OUT> created at line 0.
+    Found 41-bit adder for signal <n3606> created at line 0.
+    Found 41-bit adder for signal <GND_13_o_b[31]_add_51_OUT> created at line 0.
+    Found 40-bit adder for signal <n3610> created at line 0.
+    Found 40-bit adder for signal <GND_13_o_b[31]_add_53_OUT> created at line 0.
+    Found 39-bit adder for signal <n3614> created at line 0.
+    Found 39-bit adder for signal <GND_13_o_b[31]_add_55_OUT> created at line 0.
+    Found 38-bit adder for signal <n3618> created at line 0.
+    Found 38-bit adder for signal <GND_13_o_b[31]_add_57_OUT> created at line 0.
+    Found 37-bit adder for signal <n3622> created at line 0.
+    Found 37-bit adder for signal <GND_13_o_b[31]_add_59_OUT> created at line 0.
+    Found 36-bit adder for signal <n3626> created at line 0.
+    Found 36-bit adder for signal <GND_13_o_b[31]_add_61_OUT> created at line 0.
+    Found 35-bit adder for signal <n3630> created at line 0.
+    Found 35-bit adder for signal <GND_13_o_b[31]_add_63_OUT> created at line 0.
+    Found 34-bit adder for signal <n3634> created at line 0.
+    Found 34-bit adder for signal <GND_13_o_b[31]_add_65_OUT> created at line 0.
+    Found 33-bit adder for signal <n3638> created at line 0.
+    Found 33-bit adder for signal <GND_13_o_b[31]_add_67_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_13_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 64-bit comparator greater for signal <BUS_0001_INV_1800_o> created at line 0
+    Found 63-bit comparator greater for signal <BUS_0002_INV_1799_o> created at line 0
+    Found 62-bit comparator greater for signal <BUS_0003_INV_1798_o> created at line 0
+    Found 61-bit comparator greater for signal <BUS_0004_INV_1797_o> created at line 0
+    Found 60-bit comparator greater for signal <BUS_0005_INV_1796_o> created at line 0
+    Found 59-bit comparator greater for signal <BUS_0006_INV_1795_o> created at line 0
+    Found 58-bit comparator greater for signal <BUS_0007_INV_1794_o> created at line 0
+    Found 57-bit comparator greater for signal <BUS_0008_INV_1793_o> created at line 0
+    Found 56-bit comparator greater for signal <BUS_0009_INV_1792_o> created at line 0
+    Found 55-bit comparator greater for signal <BUS_0010_INV_1791_o> created at line 0
+    Found 54-bit comparator greater for signal <BUS_0011_INV_1790_o> created at line 0
+    Found 53-bit comparator greater for signal <BUS_0012_INV_1789_o> created at line 0
+    Found 52-bit comparator greater for signal <BUS_0013_INV_1788_o> created at line 0
+    Found 51-bit comparator greater for signal <BUS_0014_INV_1787_o> created at line 0
+    Found 50-bit comparator greater for signal <BUS_0015_INV_1786_o> created at line 0
+    Found 49-bit comparator greater for signal <BUS_0016_INV_1785_o> created at line 0
+    Found 48-bit comparator greater for signal <BUS_0017_INV_1784_o> created at line 0
+    Found 47-bit comparator greater for signal <BUS_0018_INV_1783_o> created at line 0
+    Found 46-bit comparator greater for signal <BUS_0019_INV_1782_o> created at line 0
+    Found 45-bit comparator greater for signal <BUS_0020_INV_1781_o> created at line 0
+    Found 44-bit comparator greater for signal <BUS_0021_INV_1780_o> created at line 0
+    Found 43-bit comparator greater for signal <BUS_0022_INV_1779_o> created at line 0
+    Found 42-bit comparator greater for signal <BUS_0023_INV_1778_o> created at line 0
+    Found 41-bit comparator greater for signal <BUS_0024_INV_1777_o> created at line 0
+    Found 40-bit comparator greater for signal <BUS_0025_INV_1776_o> created at line 0
+    Found 39-bit comparator greater for signal <BUS_0026_INV_1775_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0027_INV_1774_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0028_INV_1773_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0029_INV_1772_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0030_INV_1771_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0031_INV_1770_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0032_INV_1769_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_1768_o> created at line 0
+    Summary:
+	inferred  67 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 996 Multiplexer(s).
+Unit <div_32s_32s> synthesized.
+
+Synthesizing Unit <rem_32s_32s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 32-bit subtractor for signal <b[31]_unary_minus_3_OUT> created at line 0.
+    Found 64-bit adder for signal <n3511> created at line 0.
+    Found 64-bit adder for signal <GND_15_o_b[31]_add_5_OUT> created at line 0.
+    Found 63-bit adder for signal <n3515> created at line 0.
+    Found 63-bit adder for signal <GND_15_o_b[31]_add_7_OUT> created at line 0.
+    Found 62-bit adder for signal <n3519> created at line 0.
+    Found 62-bit adder for signal <GND_15_o_b[31]_add_9_OUT> created at line 0.
+    Found 61-bit adder for signal <n3523> created at line 0.
+    Found 61-bit adder for signal <GND_15_o_b[31]_add_11_OUT> created at line 0.
+    Found 60-bit adder for signal <n3527> created at line 0.
+    Found 60-bit adder for signal <GND_15_o_b[31]_add_13_OUT> created at line 0.
+    Found 59-bit adder for signal <n3531> created at line 0.
+    Found 59-bit adder for signal <GND_15_o_b[31]_add_15_OUT> created at line 0.
+    Found 58-bit adder for signal <n3535> created at line 0.
+    Found 58-bit adder for signal <GND_15_o_b[31]_add_17_OUT> created at line 0.
+    Found 57-bit adder for signal <n3539> created at line 0.
+    Found 57-bit adder for signal <GND_15_o_b[31]_add_19_OUT> created at line 0.
+    Found 56-bit adder for signal <n3543> created at line 0.
+    Found 56-bit adder for signal <GND_15_o_b[31]_add_21_OUT> created at line 0.
+    Found 55-bit adder for signal <n3547> created at line 0.
+    Found 55-bit adder for signal <GND_15_o_b[31]_add_23_OUT> created at line 0.
+    Found 54-bit adder for signal <n3551> created at line 0.
+    Found 54-bit adder for signal <GND_15_o_b[31]_add_25_OUT> created at line 0.
+    Found 53-bit adder for signal <n3555> created at line 0.
+    Found 53-bit adder for signal <GND_15_o_b[31]_add_27_OUT> created at line 0.
+    Found 52-bit adder for signal <n3559> created at line 0.
+    Found 52-bit adder for signal <GND_15_o_b[31]_add_29_OUT> created at line 0.
+    Found 51-bit adder for signal <n3563> created at line 0.
+    Found 51-bit adder for signal <GND_15_o_b[31]_add_31_OUT> created at line 0.
+    Found 50-bit adder for signal <n3567> created at line 0.
+    Found 50-bit adder for signal <GND_15_o_b[31]_add_33_OUT> created at line 0.
+    Found 49-bit adder for signal <n3571> created at line 0.
+    Found 49-bit adder for signal <GND_15_o_b[31]_add_35_OUT> created at line 0.
+    Found 48-bit adder for signal <n3575> created at line 0.
+    Found 48-bit adder for signal <GND_15_o_b[31]_add_37_OUT> created at line 0.
+    Found 47-bit adder for signal <n3579> created at line 0.
+    Found 47-bit adder for signal <GND_15_o_b[31]_add_39_OUT> created at line 0.
+    Found 46-bit adder for signal <n3583> created at line 0.
+    Found 46-bit adder for signal <GND_15_o_b[31]_add_41_OUT> created at line 0.
+    Found 45-bit adder for signal <n3587> created at line 0.
+    Found 45-bit adder for signal <GND_15_o_b[31]_add_43_OUT> created at line 0.
+    Found 44-bit adder for signal <n3591> created at line 0.
+    Found 44-bit adder for signal <GND_15_o_b[31]_add_45_OUT> created at line 0.
+    Found 43-bit adder for signal <n3595> created at line 0.
+    Found 43-bit adder for signal <GND_15_o_b[31]_add_47_OUT> created at line 0.
+    Found 42-bit adder for signal <n3599> created at line 0.
+    Found 42-bit adder for signal <GND_15_o_b[31]_add_49_OUT> created at line 0.
+    Found 41-bit adder for signal <n3603> created at line 0.
+    Found 41-bit adder for signal <GND_15_o_b[31]_add_51_OUT> created at line 0.
+    Found 40-bit adder for signal <n3607> created at line 0.
+    Found 40-bit adder for signal <GND_15_o_b[31]_add_53_OUT> created at line 0.
+    Found 39-bit adder for signal <n3611> created at line 0.
+    Found 39-bit adder for signal <GND_15_o_b[31]_add_55_OUT> created at line 0.
+    Found 38-bit adder for signal <n3615> created at line 0.
+    Found 38-bit adder for signal <GND_15_o_b[31]_add_57_OUT> created at line 0.
+    Found 37-bit adder for signal <n3619> created at line 0.
+    Found 37-bit adder for signal <GND_15_o_b[31]_add_59_OUT> created at line 0.
+    Found 36-bit adder for signal <n3623> created at line 0.
+    Found 36-bit adder for signal <GND_15_o_b[31]_add_61_OUT> created at line 0.
+    Found 35-bit adder for signal <n3627> created at line 0.
+    Found 35-bit adder for signal <GND_15_o_b[31]_add_63_OUT> created at line 0.
+    Found 34-bit adder for signal <n3631> created at line 0.
+    Found 34-bit adder for signal <GND_15_o_b[31]_add_65_OUT> created at line 0.
+    Found 33-bit adder for signal <n3635> created at line 0.
+    Found 33-bit adder for signal <GND_15_o_b[31]_add_67_OUT> created at line 0.
+    Found 32-bit adder for signal <n3639> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[31]_add_69_OUT> created at line 0.
+    Found 32-bit adder for signal <GND_15_o_a[31]_add_70_OUT[31:0]> created at line 0.
+    Found 64-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 63-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 62-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 61-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 60-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 59-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 58-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 57-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 56-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 55-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 54-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 53-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 52-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 51-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 50-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 49-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 48-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 47-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 46-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  69 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1059 Multiplexer(s).
+Unit <rem_32s_32s> synthesized.
+
+Synthesizing Unit <div_32u_32u>.
+    Related source file is "".
+    Found 64-bit adder for signal <n3436> created at line 0.
+    Found 64-bit adder for signal <GND_16_o_b[31]_add_1_OUT> created at line 0.
+    Found 63-bit adder for signal <n3440> created at line 0.
+    Found 63-bit adder for signal <GND_16_o_b[31]_add_3_OUT> created at line 0.
+    Found 62-bit adder for signal <n3444> created at line 0.
+    Found 62-bit adder for signal <GND_16_o_b[31]_add_5_OUT> created at line 0.
+    Found 61-bit adder for signal <n3448> created at line 0.
+    Found 61-bit adder for signal <GND_16_o_b[31]_add_7_OUT> created at line 0.
+    Found 60-bit adder for signal <n3452> created at line 0.
+    Found 60-bit adder for signal <GND_16_o_b[31]_add_9_OUT> created at line 0.
+    Found 59-bit adder for signal <n3456> created at line 0.
+    Found 59-bit adder for signal <GND_16_o_b[31]_add_11_OUT> created at line 0.
+    Found 58-bit adder for signal <n3460> created at line 0.
+    Found 58-bit adder for signal <GND_16_o_b[31]_add_13_OUT> created at line 0.
+    Found 57-bit adder for signal <n3464> created at line 0.
+    Found 57-bit adder for signal <GND_16_o_b[31]_add_15_OUT> created at line 0.
+    Found 56-bit adder for signal <n3468> created at line 0.
+    Found 56-bit adder for signal <GND_16_o_b[31]_add_17_OUT> created at line 0.
+    Found 55-bit adder for signal <n3472> created at line 0.
+    Found 55-bit adder for signal <GND_16_o_b[31]_add_19_OUT> created at line 0.
+    Found 54-bit adder for signal <n3476> created at line 0.
+    Found 54-bit adder for signal <GND_16_o_b[31]_add_21_OUT> created at line 0.
+    Found 53-bit adder for signal <n3480> created at line 0.
+    Found 53-bit adder for signal <GND_16_o_b[31]_add_23_OUT> created at line 0.
+    Found 52-bit adder for signal <n3484> created at line 0.
+    Found 52-bit adder for signal <GND_16_o_b[31]_add_25_OUT> created at line 0.
+    Found 51-bit adder for signal <n3488> created at line 0.
+    Found 51-bit adder for signal <GND_16_o_b[31]_add_27_OUT> created at line 0.
+    Found 50-bit adder for signal <n3492> created at line 0.
+    Found 50-bit adder for signal <GND_16_o_b[31]_add_29_OUT> created at line 0.
+    Found 49-bit adder for signal <n3496> created at line 0.
+    Found 49-bit adder for signal <GND_16_o_b[31]_add_31_OUT> created at line 0.
+    Found 48-bit adder for signal <n3500> created at line 0.
+    Found 48-bit adder for signal <GND_16_o_b[31]_add_33_OUT> created at line 0.
+    Found 47-bit adder for signal <n3504> created at line 0.
+    Found 47-bit adder for signal <GND_16_o_b[31]_add_35_OUT> created at line 0.
+    Found 46-bit adder for signal <n3508> created at line 0.
+    Found 46-bit adder for signal <GND_16_o_b[31]_add_37_OUT> created at line 0.
+    Found 45-bit adder for signal <n3512> created at line 0.
+    Found 45-bit adder for signal <GND_16_o_b[31]_add_39_OUT> created at line 0.
+    Found 44-bit adder for signal <n3516> created at line 0.
+    Found 44-bit adder for signal <GND_16_o_b[31]_add_41_OUT> created at line 0.
+    Found 43-bit adder for signal <n3520> created at line 0.
+    Found 43-bit adder for signal <GND_16_o_b[31]_add_43_OUT> created at line 0.
+    Found 42-bit adder for signal <n3524> created at line 0.
+    Found 42-bit adder for signal <GND_16_o_b[31]_add_45_OUT> created at line 0.
+    Found 41-bit adder for signal <n3528> created at line 0.
+    Found 41-bit adder for signal <GND_16_o_b[31]_add_47_OUT> created at line 0.
+    Found 40-bit adder for signal <n3532> created at line 0.
+    Found 40-bit adder for signal <GND_16_o_b[31]_add_49_OUT> created at line 0.
+    Found 39-bit adder for signal <n3536> created at line 0.
+    Found 39-bit adder for signal <GND_16_o_b[31]_add_51_OUT> created at line 0.
+    Found 38-bit adder for signal <n3540> created at line 0.
+    Found 38-bit adder for signal <GND_16_o_b[31]_add_53_OUT> created at line 0.
+    Found 37-bit adder for signal <n3544> created at line 0.
+    Found 37-bit adder for signal <GND_16_o_b[31]_add_55_OUT> created at line 0.
+    Found 36-bit adder for signal <n3548> created at line 0.
+    Found 36-bit adder for signal <GND_16_o_b[31]_add_57_OUT> created at line 0.
+    Found 35-bit adder for signal <n3552> created at line 0.
+    Found 35-bit adder for signal <GND_16_o_b[31]_add_59_OUT> created at line 0.
+    Found 34-bit adder for signal <n3556> created at line 0.
+    Found 34-bit adder for signal <GND_16_o_b[31]_add_61_OUT> created at line 0.
+    Found 33-bit adder for signal <n3560> created at line 0.
+    Found 33-bit adder for signal <GND_16_o_b[31]_add_63_OUT> created at line 0.
+    Found 64-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 63-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 62-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 61-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 60-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 59-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 58-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 57-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 56-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 55-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 54-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 53-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 52-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 51-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 50-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 49-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 48-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 47-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 46-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  64 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 993 Multiplexer(s).
+Unit <div_32u_32u> synthesized.
+
+Synthesizing Unit <mod_32u_32u>.
+    Related source file is "".
+    Found 64-bit adder for signal <n3436> created at line 0.
+    Found 64-bit adder for signal <GND_17_o_b[31]_add_1_OUT> created at line 0.
+    Found 63-bit adder for signal <n3440> created at line 0.
+    Found 63-bit adder for signal <GND_17_o_b[31]_add_3_OUT> created at line 0.
+    Found 62-bit adder for signal <n3444> created at line 0.
+    Found 62-bit adder for signal <GND_17_o_b[31]_add_5_OUT> created at line 0.
+    Found 61-bit adder for signal <n3448> created at line 0.
+    Found 61-bit adder for signal <GND_17_o_b[31]_add_7_OUT> created at line 0.
+    Found 60-bit adder for signal <n3452> created at line 0.
+    Found 60-bit adder for signal <GND_17_o_b[31]_add_9_OUT> created at line 0.
+    Found 59-bit adder for signal <n3456> created at line 0.
+    Found 59-bit adder for signal <GND_17_o_b[31]_add_11_OUT> created at line 0.
+    Found 58-bit adder for signal <n3460> created at line 0.
+    Found 58-bit adder for signal <GND_17_o_b[31]_add_13_OUT> created at line 0.
+    Found 57-bit adder for signal <n3464> created at line 0.
+    Found 57-bit adder for signal <GND_17_o_b[31]_add_15_OUT> created at line 0.
+    Found 56-bit adder for signal <n3468> created at line 0.
+    Found 56-bit adder for signal <GND_17_o_b[31]_add_17_OUT> created at line 0.
+    Found 55-bit adder for signal <n3472> created at line 0.
+    Found 55-bit adder for signal <GND_17_o_b[31]_add_19_OUT> created at line 0.
+    Found 54-bit adder for signal <n3476> created at line 0.
+    Found 54-bit adder for signal <GND_17_o_b[31]_add_21_OUT> created at line 0.
+    Found 53-bit adder for signal <n3480> created at line 0.
+    Found 53-bit adder for signal <GND_17_o_b[31]_add_23_OUT> created at line 0.
+    Found 52-bit adder for signal <n3484> created at line 0.
+    Found 52-bit adder for signal <GND_17_o_b[31]_add_25_OUT> created at line 0.
+    Found 51-bit adder for signal <n3488> created at line 0.
+    Found 51-bit adder for signal <GND_17_o_b[31]_add_27_OUT> created at line 0.
+    Found 50-bit adder for signal <n3492> created at line 0.
+    Found 50-bit adder for signal <GND_17_o_b[31]_add_29_OUT> created at line 0.
+    Found 49-bit adder for signal <n3496> created at line 0.
+    Found 49-bit adder for signal <GND_17_o_b[31]_add_31_OUT> created at line 0.
+    Found 48-bit adder for signal <n3500> created at line 0.
+    Found 48-bit adder for signal <GND_17_o_b[31]_add_33_OUT> created at line 0.
+    Found 47-bit adder for signal <n3504> created at line 0.
+    Found 47-bit adder for signal <GND_17_o_b[31]_add_35_OUT> created at line 0.
+    Found 46-bit adder for signal <n3508> created at line 0.
+    Found 46-bit adder for signal <GND_17_o_b[31]_add_37_OUT> created at line 0.
+    Found 45-bit adder for signal <n3512> created at line 0.
+    Found 45-bit adder for signal <GND_17_o_b[31]_add_39_OUT> created at line 0.
+    Found 44-bit adder for signal <n3516> created at line 0.
+    Found 44-bit adder for signal <GND_17_o_b[31]_add_41_OUT> created at line 0.
+    Found 43-bit adder for signal <n3520> created at line 0.
+    Found 43-bit adder for signal <GND_17_o_b[31]_add_43_OUT> created at line 0.
+    Found 42-bit adder for signal <n3524> created at line 0.
+    Found 42-bit adder for signal <GND_17_o_b[31]_add_45_OUT> created at line 0.
+    Found 41-bit adder for signal <n3528> created at line 0.
+    Found 41-bit adder for signal <GND_17_o_b[31]_add_47_OUT> created at line 0.
+    Found 40-bit adder for signal <n3532> created at line 0.
+    Found 40-bit adder for signal <GND_17_o_b[31]_add_49_OUT> created at line 0.
+    Found 39-bit adder for signal <n3536> created at line 0.
+    Found 39-bit adder for signal <GND_17_o_b[31]_add_51_OUT> created at line 0.
+    Found 38-bit adder for signal <n3540> created at line 0.
+    Found 38-bit adder for signal <GND_17_o_b[31]_add_53_OUT> created at line 0.
+    Found 37-bit adder for signal <n3544> created at line 0.
+    Found 37-bit adder for signal <GND_17_o_b[31]_add_55_OUT> created at line 0.
+    Found 36-bit adder for signal <n3548> created at line 0.
+    Found 36-bit adder for signal <GND_17_o_b[31]_add_57_OUT> created at line 0.
+    Found 35-bit adder for signal <n3552> created at line 0.
+    Found 35-bit adder for signal <GND_17_o_b[31]_add_59_OUT> created at line 0.
+    Found 34-bit adder for signal <n3556> created at line 0.
+    Found 34-bit adder for signal <GND_17_o_b[31]_add_61_OUT> created at line 0.
+    Found 33-bit adder for signal <n3560> created at line 0.
+    Found 33-bit adder for signal <GND_17_o_b[31]_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <n3564> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[31]_add_65_OUT[31:0]> created at line 0.
+    Found 64-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 63-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 62-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 61-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 60-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 59-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 58-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 57-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 56-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 55-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 54-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 53-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 52-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 51-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 50-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 49-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 48-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 47-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 46-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  66 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 994 Multiplexer(s).
+Unit <mod_32u_32u> synthesized.
+
+Synthesizing Unit <ex_mem>.
+    Related source file is "D:\verilog\P7\ex_mem.v".
+    Found 32-bit register for signal <ex_mem_ALUout>.
+    Found 32-bit register for signal <ex_mem_din>.
+    Found 32-bit register for signal <ex_mem_IR>.
+    Found 5-bit register for signal <ex_mem_WA>.
+    Found 32-bit register for signal <ex_mem_PC>.
+    Found 1-bit register for signal <ex_mem_delay>.
+    Found 1-bit register for signal <ex_mem_cgcp0>.
+    Found 5-bit register for signal <ex_mem_exccode>.
+    Summary:
+	inferred 140 D-type flip-flop(s).
+Unit <ex_mem> synthesized.

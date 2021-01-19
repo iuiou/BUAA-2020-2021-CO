@@ -1,0 +1,402 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\verilog\P5\control.v" into library work
+Parsing module <control>.
+Analyzing Verilog file "D:\verilog\P5\get_tuse.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <get_tuse>.
+Analyzing Verilog file "D:\verilog\P5\get_tnew.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <get_tnew>.
+Analyzing Verilog file "D:\verilog\P5\trans.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <trans>.
+Analyzing Verilog file "D:\verilog\P5\stall_control.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <stall_control>.
+Analyzing Verilog file "D:\verilog\P5\mem_wb.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <mem_wb>.
+Analyzing Verilog file "D:\verilog\P5\if_id.v" into library work
+Parsing module <if_id>.
+Analyzing Verilog file "D:\verilog\P5\IFU.v" into library work
+Parsing module <IFU>.
+Analyzing Verilog file "D:\verilog\P5\id_ex.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <id_ex>.
+Analyzing Verilog file "D:\verilog\P5\GRF.v" into library work
+Parsing module <GRF>.
+Analyzing Verilog file "D:\verilog\P5\ex_mem.v" into library work
+Parsing module <ex_mem>.
+Analyzing Verilog file "D:\verilog\P5\DM.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <DM>.
+Analyzing Verilog file "D:\verilog\P5\ALU.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <ALU>.
+Analyzing Verilog file "D:\verilog\P5\mips.v" into library work
+Parsing verilog file "wiredef.vh" included at line 21.
+Parsing module <mips>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mips>.
+
+Elaborating module <IFU>.
+Reading initialization file \"code.txt\".
+WARNING:HDLCompiler:1670 - "D:\verilog\P5\IFU.v" Line 37: Signal <IM> in initial block is partially initialized.
+
+Elaborating module <control>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\mips.v" Line 46: Assignment to addu ignored, since the identifier is never used
+
+Elaborating module <if_id>.
+
+Elaborating module <GRF>.
+"D:\verilog\P5\GRF.v" Line 47. $display  32'b................................ 5'b..... 32'b................................
+
+Elaborating module <id_ex>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\id_ex.v" Line 53: Assignment to beq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\id_ex.v" Line 59: Assignment to rs ignored, since the identifier is never used
+
+Elaborating module <ALU>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\ALU.v" Line 38: Assignment to lw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\mips.v" Line 115: Assignment to zero ignored, since the identifier is never used
+
+Elaborating module <ex_mem>.
+
+Elaborating module <DM>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\DM.v" Line 42: Assignment to addu ignored, since the identifier is never used
+"D:\verilog\P5\DM.v" Line 53. $display  32'b................................ 32'b................................ 32'b................................
+
+Elaborating module <mem_wb>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\mem_wb.v" Line 49: Assignment to sw ignored, since the identifier is never used
+
+Elaborating module <stall_control>.
+
+Elaborating module <get_tuse>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\get_tuse.v" Line 31: Assignment to jal ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P5\get_tuse.v" Line 33: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P5\get_tuse.v" Line 35: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <get_tnew>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\get_tnew.v" Line 32: Assignment to sw ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P5\get_tnew.v" Line 37: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <trans>.
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 41: Assignment to id_addu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 42: Assignment to id_subu ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 43: Assignment to id_lw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 44: Assignment to id_sw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 46: Assignment to id_lui ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 47: Assignment to id_jal ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 49: Assignment to id_ori ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 50: Assignment to id_j ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 60: Assignment to ex_beq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 63: Assignment to ex_jr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 65: Assignment to ex_j ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 73: Assignment to mem_lw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 75: Assignment to mem_beq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 78: Assignment to mem_jr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 80: Assignment to mem_j ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 89: Assignment to wb_sw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 90: Assignment to wb_beq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 93: Assignment to wb_jr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\verilog\P5\trans.v" Line 95: Assignment to wb_j ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\verilog\P5\trans.v" Line 109: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P5\trans.v" Line 119: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\verilog\P5\trans.v" Line 129: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 34. All outputs of instance <ifu> of block <IFU> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 43. All outputs of instance <Control> of block <control> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 55. All outputs of instance <IF_id> of block <if_id> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 71. All outputs of instance <grf> of block <GRF> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 91. All outputs of instance <ID_ex> of block <id_ex> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 108. All outputs of instance <alu> of block <ALU> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 119. All outputs of instance <EX_mem> of block <ex_mem> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 137. All outputs of instance <dm> of block <DM> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 147. All outputs of instance <MEM_wb> of block <mem_wb> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 162. All outputs of instance <Stall> of block <stall_control> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\verilog\P5\mips.v" line 171. All outputs of instance <Trans> of block <trans> are unconnected in block <mips>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mips>.
+    Related source file is "D:\verilog\P5\mips.v".
+INFO:Xst:3210 - "D:\verilog\P5\mips.v" line 43: Output port <addu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\mips.v" line 43: Output port <subu> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\mips.v" line 43: Output port <lw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\mips.v" line 43: Output port <sw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\mips.v" line 43: Output port <lui> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\mips.v" line 43: Output port <ori> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\mips.v" line 108: Output port <zero> of the instance <alu> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <mips> synthesized.
+
+Synthesizing Unit <control>.
+    Related source file is "D:\verilog\P5\control.v".
+    Summary:
+	no macro.
+Unit <control> synthesized.
+
+Synthesizing Unit <get_tuse>.
+    Related source file is "D:\verilog\P5\get_tuse.v".
+WARNING:Xst:647 - Input <IR<25:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\verilog\P5\get_tuse.v" line 28: Output port <jal> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\get_tuse.v" line 28: Output port <j> of the instance <Control> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <get_tuse> synthesized.
+
+Synthesizing Unit <get_tnew>.
+    Related source file is "D:\verilog\P5\get_tnew.v".
+WARNING:Xst:647 - Input <IR<10:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IR<25:21>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\verilog\P5\get_tnew.v" line 29: Output port <sw> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\get_tnew.v" line 29: Output port <beq> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\get_tnew.v" line 29: Output port <jr> of the instance <Control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\verilog\P5\get_tnew.v" line 29: Output port <j> of the instance <Control> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <get_tnew> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mips> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mips, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mips.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of    210     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.04 secs
+ 
+--> 
+
+Total memory usage is 4904912 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

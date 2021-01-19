@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/verilog/gray/gray.xst" -ofn "D:/verilog/gray/gray.syr" 

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/verilog/blockchecker/BlockChecker.xst" -ofn "D:/verilog/blockchecker/BlockChecker.syr" 
+xst -intstyle ise -ifn "D:/verilog/blockchecker/BlockChecker.xst" -ofn "D:/verilog/blockchecker/BlockChecker.syr" 
+xst -intstyle ise -ifn "D:/verilog/blockchecker/BlockChecker.xst" -ofn "D:/verilog/blockchecker/BlockChecker.syr" 
+xst -intstyle ise -ifn "D:/verilog/blockchecker/BlockChecker.xst" -ofn "D:/verilog/blockchecker/BlockChecker.syr" 
+xst -intstyle ise -ifn "D:/verilog/blockchecker/BlockChecker.xst" -ofn "D:/verilog/blockchecker/BlockChecker.syr" 
+xst -intstyle ise -ifn "D:/verilog/blockchecker/BlockChecker.xst" -ofn "D:/verilog/blockchecker/BlockChecker.syr" 

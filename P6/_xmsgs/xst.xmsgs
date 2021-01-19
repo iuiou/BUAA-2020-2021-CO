@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"D:\verilog\P6-2\IFU.v" Line 37: Signal &lt;<arg fmt="%s" index="1">IM</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\nPC.v" Line 33: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\nPC.v" Line 34: Assignment to <arg fmt="%s" index="1">lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\verilog\P6-2\nPC.v" Line 36: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\verilog\P6-2\nPC.v" Line 33: Net &lt;<arg fmt="%s" index="1">rt</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\id_ex.v" Line 53: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\id_ex.v" Line 54: Assignment to <arg fmt="%s" index="1">lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\id_ex.v" Line 60: Assignment to <arg fmt="%s" index="1">rs</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\ALU.v" Line 38: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\ALU.v" Line 39: Assignment to <arg fmt="%s" index="1">lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\verilog\P6-2\ALU.v" Line 38: Net &lt;<arg fmt="%s" index="1">rt</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\mips.v" Line 102: Assignment to <arg fmt="%s" index="1">zero</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\DM.v" Line 42: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\DM.v" Line 43: Assignment to <arg fmt="%s" index="1">lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\verilog\P6-2\DM.v" Line 42: Net &lt;<arg fmt="%s" index="1">rt</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\mem_wb.v" Line 49: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\mem_wb.v" Line 50: Assignment to <arg fmt="%s" index="1">lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\verilog\P6-2\mem_wb.v" Line 49: Net &lt;<arg fmt="%s" index="1">rt</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\get_tuse.v" Line 31: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\get_tuse.v" Line 32: Assignment to <arg fmt="%s" index="1">lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\verilog\P6-2\get_tuse.v" Line 34: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\verilog\P6-2\get_tuse.v" Line 36: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\verilog\P6-2\get_tuse.v" Line 31: Net &lt;<arg fmt="%s" index="1">rt</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\get_tnew.v" Line 32: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\get_tnew.v" Line 33: Assignment to <arg fmt="%s" index="1">lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\verilog\P6-2\get_tnew.v" Line 38: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\verilog\P6-2\get_tnew.v" Line 32: Net &lt;<arg fmt="%s" index="1">rt</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\trans.v" Line 40: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 41: Assignment to <arg fmt="%s" index="1">id_lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 42: Assignment to <arg fmt="%s" index="1">id_lbu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 43: Assignment to <arg fmt="%s" index="1">id_lh</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 44: Assignment to <arg fmt="%s" index="1">id_lhu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 45: Assignment to <arg fmt="%s" index="1">id_lw</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 46: Assignment to <arg fmt="%s" index="1">id_sb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 47: Assignment to <arg fmt="%s" index="1">id_sh</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 48: Assignment to <arg fmt="%s" index="1">id_sw</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 49: Assignment to <arg fmt="%s" index="1">id_add</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 50: Assignment to <arg fmt="%s" index="1">id_addu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 51: Assignment to <arg fmt="%s" index="1">id_subu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 52: Assignment to <arg fmt="%s" index="1">id_sub</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 53: Assignment to <arg fmt="%s" index="1">id_mult</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 54: Assignment to <arg fmt="%s" index="1">id_multu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 55: Assignment to <arg fmt="%s" index="1">id_div</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 56: Assignment to <arg fmt="%s" index="1">id_divu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 57: Assignment to <arg fmt="%s" index="1">id_sll</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 58: Assignment to <arg fmt="%s" index="1">id_srl</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 59: Assignment to <arg fmt="%s" index="1">id_sra</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 60: Assignment to <arg fmt="%s" index="1">id_sllv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 61: Assignment to <arg fmt="%s" index="1">id_srlv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 62: Assignment to <arg fmt="%s" index="1">id_srav</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 63: Assignment to <arg fmt="%s" index="1">id_And</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 64: Assignment to <arg fmt="%s" index="1">id_Or</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 65: Assignment to <arg fmt="%s" index="1">id_Xor</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 66: Assignment to <arg fmt="%s" index="1">id_Nor</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 67: Assignment to <arg fmt="%s" index="1">id_addi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 68: Assignment to <arg fmt="%s" index="1">id_addiu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 69: Assignment to <arg fmt="%s" index="1">id_andi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 70: Assignment to <arg fmt="%s" index="1">id_ori</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 71: Assignment to <arg fmt="%s" index="1">id_xori</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 72: Assignment to <arg fmt="%s" index="1">id_lui</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 73: Assignment to <arg fmt="%s" index="1">id_slt</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 74: Assignment to <arg fmt="%s" index="1">id_slti</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 75: Assignment to <arg fmt="%s" index="1">id_sltiu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 76: Assignment to <arg fmt="%s" index="1">id_sltu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 78: Assignment to <arg fmt="%s" index="1">id_bne</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 79: Assignment to <arg fmt="%s" index="1">id_blez</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 80: Assignment to <arg fmt="%s" index="1">id_bgtz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 81: Assignment to <arg fmt="%s" index="1">id_bltz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 82: Assignment to <arg fmt="%s" index="1">id_bgez</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 83: Assignment to <arg fmt="%s" index="1">id_j</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 84: Assignment to <arg fmt="%s" index="1">id_jal</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 87: Assignment to <arg fmt="%s" index="1">id_mfhi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 88: Assignment to <arg fmt="%s" index="1">id_mflo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 89: Assignment to <arg fmt="%s" index="1">id_mthi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 90: Assignment to <arg fmt="%s" index="1">id_mtlo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\trans.v" Line 95: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 96: Assignment to <arg fmt="%s" index="1">ex_lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 97: Assignment to <arg fmt="%s" index="1">ex_lbu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 98: Assignment to <arg fmt="%s" index="1">ex_lh</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 99: Assignment to <arg fmt="%s" index="1">ex_lhu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 101: Assignment to <arg fmt="%s" index="1">ex_sb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 102: Assignment to <arg fmt="%s" index="1">ex_sh</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 104: Assignment to <arg fmt="%s" index="1">ex_add</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 107: Assignment to <arg fmt="%s" index="1">ex_sub</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 108: Assignment to <arg fmt="%s" index="1">ex_mult</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 109: Assignment to <arg fmt="%s" index="1">ex_multu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 110: Assignment to <arg fmt="%s" index="1">ex_div</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 111: Assignment to <arg fmt="%s" index="1">ex_divu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 112: Assignment to <arg fmt="%s" index="1">ex_sll</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 113: Assignment to <arg fmt="%s" index="1">ex_srl</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 114: Assignment to <arg fmt="%s" index="1">ex_sra</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 115: Assignment to <arg fmt="%s" index="1">ex_sllv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 116: Assignment to <arg fmt="%s" index="1">ex_srlv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 117: Assignment to <arg fmt="%s" index="1">ex_srav</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 118: Assignment to <arg fmt="%s" index="1">ex_And</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 119: Assignment to <arg fmt="%s" index="1">ex_Or</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 120: Assignment to <arg fmt="%s" index="1">ex_Xor</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 121: Assignment to <arg fmt="%s" index="1">ex_Nor</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 123: Assignment to <arg fmt="%s" index="1">ex_addiu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 124: Assignment to <arg fmt="%s" index="1">ex_andi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 126: Assignment to <arg fmt="%s" index="1">ex_xori</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 128: Assignment to <arg fmt="%s" index="1">ex_slt</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 129: Assignment to <arg fmt="%s" index="1">ex_slti</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 130: Assignment to <arg fmt="%s" index="1">ex_sltiu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 131: Assignment to <arg fmt="%s" index="1">ex_sltu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 132: Assignment to <arg fmt="%s" index="1">ex_beq</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 133: Assignment to <arg fmt="%s" index="1">ex_bne</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 134: Assignment to <arg fmt="%s" index="1">ex_blez</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 135: Assignment to <arg fmt="%s" index="1">ex_bgtz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 136: Assignment to <arg fmt="%s" index="1">ex_bltz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 137: Assignment to <arg fmt="%s" index="1">ex_bgez</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 138: Assignment to <arg fmt="%s" index="1">ex_j</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 141: Assignment to <arg fmt="%s" index="1">ex_jr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 142: Assignment to <arg fmt="%s" index="1">ex_mfhi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 143: Assignment to <arg fmt="%s" index="1">ex_mflo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 144: Assignment to <arg fmt="%s" index="1">ex_mthi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 145: Assignment to <arg fmt="%s" index="1">ex_mtlo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\trans.v" Line 150: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 151: Assignment to <arg fmt="%s" index="1">mem_lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 152: Assignment to <arg fmt="%s" index="1">mem_lbu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 153: Assignment to <arg fmt="%s" index="1">mem_lh</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 154: Assignment to <arg fmt="%s" index="1">mem_lhu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 155: Assignment to <arg fmt="%s" index="1">mem_lw</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 156: Assignment to <arg fmt="%s" index="1">mem_sb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 157: Assignment to <arg fmt="%s" index="1">mem_sh</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 159: Assignment to <arg fmt="%s" index="1">mem_add</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 162: Assignment to <arg fmt="%s" index="1">mem_sub</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 163: Assignment to <arg fmt="%s" index="1">mem_mult</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 164: Assignment to <arg fmt="%s" index="1">mem_multu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 165: Assignment to <arg fmt="%s" index="1">mem_div</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 166: Assignment to <arg fmt="%s" index="1">mem_divu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 167: Assignment to <arg fmt="%s" index="1">mem_sll</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 168: Assignment to <arg fmt="%s" index="1">mem_srl</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 169: Assignment to <arg fmt="%s" index="1">mem_sra</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 170: Assignment to <arg fmt="%s" index="1">mem_sllv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 171: Assignment to <arg fmt="%s" index="1">mem_srlv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 172: Assignment to <arg fmt="%s" index="1">mem_srav</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 173: Assignment to <arg fmt="%s" index="1">mem_And</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 174: Assignment to <arg fmt="%s" index="1">mem_Or</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 175: Assignment to <arg fmt="%s" index="1">mem_Xor</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 176: Assignment to <arg fmt="%s" index="1">mem_Nor</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 178: Assignment to <arg fmt="%s" index="1">mem_addiu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 179: Assignment to <arg fmt="%s" index="1">mem_andi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 181: Assignment to <arg fmt="%s" index="1">mem_xori</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 183: Assignment to <arg fmt="%s" index="1">mem_slt</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 184: Assignment to <arg fmt="%s" index="1">mem_slti</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 185: Assignment to <arg fmt="%s" index="1">mem_sltiu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 186: Assignment to <arg fmt="%s" index="1">mem_sltu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 187: Assignment to <arg fmt="%s" index="1">mem_beq</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 188: Assignment to <arg fmt="%s" index="1">mem_bne</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 189: Assignment to <arg fmt="%s" index="1">mem_blez</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 190: Assignment to <arg fmt="%s" index="1">mem_bgtz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 191: Assignment to <arg fmt="%s" index="1">mem_bltz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 192: Assignment to <arg fmt="%s" index="1">mem_bgez</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 193: Assignment to <arg fmt="%s" index="1">mem_j</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 196: Assignment to <arg fmt="%s" index="1">mem_jr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 197: Assignment to <arg fmt="%s" index="1">mem_mfhi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 198: Assignment to <arg fmt="%s" index="1">mem_mflo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 199: Assignment to <arg fmt="%s" index="1">mem_mthi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 200: Assignment to <arg fmt="%s" index="1">mem_mtlo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\verilog\P6-2\trans.v" Line 205: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 206: Assignment to <arg fmt="%s" index="1">wb_lb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 207: Assignment to <arg fmt="%s" index="1">wb_lbu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 208: Assignment to <arg fmt="%s" index="1">wb_lh</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 209: Assignment to <arg fmt="%s" index="1">wb_lhu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 211: Assignment to <arg fmt="%s" index="1">wb_sb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 212: Assignment to <arg fmt="%s" index="1">wb_sh</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 213: Assignment to <arg fmt="%s" index="1">wb_sw</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 214: Assignment to <arg fmt="%s" index="1">wb_add</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 217: Assignment to <arg fmt="%s" index="1">wb_sub</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 218: Assignment to <arg fmt="%s" index="1">wb_mult</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 219: Assignment to <arg fmt="%s" index="1">wb_multu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 220: Assignment to <arg fmt="%s" index="1">wb_div</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 221: Assignment to <arg fmt="%s" index="1">wb_divu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 222: Assignment to <arg fmt="%s" index="1">wb_sll</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 223: Assignment to <arg fmt="%s" index="1">wb_srl</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 224: Assignment to <arg fmt="%s" index="1">wb_sra</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 225: Assignment to <arg fmt="%s" index="1">wb_sllv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 226: Assignment to <arg fmt="%s" index="1">wb_srlv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 227: Assignment to <arg fmt="%s" index="1">wb_srav</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 228: Assignment to <arg fmt="%s" index="1">wb_And</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 229: Assignment to <arg fmt="%s" index="1">wb_Or</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 230: Assignment to <arg fmt="%s" index="1">wb_Xor</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 231: Assignment to <arg fmt="%s" index="1">wb_Nor</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 232: Assignment to <arg fmt="%s" index="1">wb_addi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 233: Assignment to <arg fmt="%s" index="1">wb_addiu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 234: Assignment to <arg fmt="%s" index="1">wb_andi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 236: Assignment to <arg fmt="%s" index="1">wb_xori</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 238: Assignment to <arg fmt="%s" index="1">wb_slt</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 239: Assignment to <arg fmt="%s" index="1">wb_slti</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 240: Assignment to <arg fmt="%s" index="1">wb_sltiu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 241: Assignment to <arg fmt="%s" index="1">wb_sltu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 242: Assignment to <arg fmt="%s" index="1">wb_beq</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 243: Assignment to <arg fmt="%s" index="1">wb_bne</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 244: Assignment to <arg fmt="%s" index="1">wb_blez</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 245: Assignment to <arg fmt="%s" index="1">wb_bgtz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 246: Assignment to <arg fmt="%s" index="1">wb_bltz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 247: Assignment to <arg fmt="%s" index="1">wb_bgez</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 248: Assignment to <arg fmt="%s" index="1">wb_j</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 250: Assignment to <arg fmt="%s" index="1">wb_jalr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\verilog\P6-2\trans.v" Line 251: Assignment to <arg fmt="%s" index="1">wb_jr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 252: Assignment to <arg fmt="%s" index="1">wb_mfhi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 253: Assignment to <arg fmt="%s" index="1">wb_mflo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 254: Assignment to <arg fmt="%s" index="1">wb_mthi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\verilog\P6-2\trans.v" Line 255: Assignment to <arg fmt="%s" index="1">wb_mtlo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\verilog\P6-2\trans.v" Line 269: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\verilog\P6-2\trans.v" Line 279: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\verilog\P6-2\trans.v" Line 289: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\verilog\P6-2\trans.v" Line 40: Net &lt;<arg fmt="%s" index="1">rt</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">33</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">ifu</arg>&gt; of block &lt;<arg fmt="%s" index="4">IFU</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">42</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">IF_id</arg>&gt; of block &lt;<arg fmt="%s" index="4">if_id</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">56</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">grf</arg>&gt; of block &lt;<arg fmt="%s" index="4">GRF</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">68</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">NPC</arg>&gt; of block &lt;<arg fmt="%s" index="4">nPC</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">78</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">ID_ex</arg>&gt; of block &lt;<arg fmt="%s" index="4">id_ex</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">95</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">alu</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALU</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">106</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">EX_mem</arg>&gt; of block &lt;<arg fmt="%s" index="4">ex_mem</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">124</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">dm</arg>&gt; of block &lt;<arg fmt="%s" index="4">DM</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">134</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MEM_wb</arg>&gt; of block &lt;<arg fmt="%s" index="4">mem_wb</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">149</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Stall</arg>&gt; of block &lt;<arg fmt="%s" index="4">stall_control</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%d" index="2">158</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Trans</arg>&gt; of block &lt;<arg fmt="%s" index="4">trans</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mips</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\mips.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">zero</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">alu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">IR&lt;25:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">lb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">lbu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">lh</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">lhu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">sb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">sh</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">add</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">sub</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">mult</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">multu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">div</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">divu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">sll</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">srl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">sra</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">sllv</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">srlv</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">srav</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">And</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">Or</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">Xor</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">Nor</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">addi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">addiu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">andi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">xori</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">slt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">slti</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">sltiu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">sltu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">bne</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">blez</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">bgtz</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">bltz</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">bgez</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">j</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">jal</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">jalr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">mfhi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">mflo</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">mthi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tuse.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">mtlo</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">rt</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">IR&lt;10:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">IR&lt;25:21&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">lb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">lbu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">lh</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">lhu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sh</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sw</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">add</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sub</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">mult</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">multu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">div</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">divu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sll</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">srl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sra</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sllv</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">srlv</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">srav</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">And</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">Or</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">Xor</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">Nor</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">addi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">addiu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">andi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">xori</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">slt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">slti</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sltiu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">sltu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">beq</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">bne</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">blez</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">bgtz</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">bltz</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">bgez</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">j</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">jalr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">jr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">mfhi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">mflo</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">mthi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\verilog\P6-2\get_tnew.v</arg>&quot; line <arg fmt="%s" index="2">29</arg>: Output port &lt;<arg fmt="%s" index="3">mtlo</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Control</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">rt</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+</messages>
+

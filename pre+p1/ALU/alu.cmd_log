@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/verilog/ALU/alu.xst" -ofn "D:/verilog/ALU/alu.syr" 
+xst -intstyle ise -ifn "D:/verilog/ALU/alu.xst" -ofn "D:/verilog/ALU/alu.syr" 
+xst -intstyle ise -ifn "D:/verilog/ALU/alu.xst" -ofn "D:/verilog/ALU/alu.syr" 

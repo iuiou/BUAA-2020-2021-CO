@@ -1,0 +1,578 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: code.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "code.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "code"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : code
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\verilog\code1\code.v" into library work
+Parsing module <code>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <code>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <code>.
+    Related source file is "D:\verilog\code1\code.v".
+    Found 64-bit register for signal <Output1>.
+    Found 32-bit register for signal <cnt1>.
+    Found 32-bit register for signal <cnt2>.
+    Found 64-bit register for signal <Output0>.
+    Found 32-bit adder for signal <cnt1[31]_GND_1_o_add_4_OUT> created at line 43.
+    Found 32-bit adder for signal <cnt2[31]_GND_1_o_add_5_OUT> created at line 44.
+    Found 64-bit adder for signal <Output0[63]_GND_1_o_add_15_OUT> created at line 52.
+    Found 64-bit adder for signal <Output1[63]_GND_1_o_add_19_OUT> created at line 57.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 192 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+Unit <code> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 64-bit adder                                          : 2
+# Registers                                            : 4
+ 32-bit register                                       : 2
+ 64-bit register                                       : 2
+# Multiplexers                                         : 10
+ 32-bit 2-to-1 multiplexer                             : 6
+ 64-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 64-bit adder                                          : 2
+# Registers                                            : 192
+ Flip-Flops                                            : 192
+# Multiplexers                                         : 10
+ 32-bit 2-to-1 multiplexer                             : 6
+ 64-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <code> ...
+WARNING:Xst:1293 - FF/Latch <cnt1_31> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_2> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_3> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_4> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_5> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_6> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_7> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_8> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_9> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_10> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_11> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_12> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_13> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_14> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_15> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_16> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_17> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_18> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_19> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_20> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_21> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_22> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_23> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_24> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_25> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_26> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_27> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_28> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_29> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_30> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt2_31> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_0> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_1> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_2> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_3> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_4> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_5> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_6> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_7> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_8> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_9> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_10> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_11> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_12> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_13> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_14> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_15> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_16> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_17> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_18> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_19> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_20> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_21> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_22> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_23> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_24> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_25> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_26> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_27> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_28> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_29> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt1_30> has a constant value of 0 in block <code>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block code, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 130
+ Flip-Flops                                            : 130
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : code.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 522
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 128
+#      LUT4                        : 64
+#      LUT5                        : 66
+#      LUT6                        : 1
+#      MUXCY                       : 128
+#      VCC                         : 1
+#      XORCY                       : 131
+# FlipFlops/Latches                : 130
+#      FD                          : 128
+#      FDR                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 131
+#      IBUF                        : 3
+#      OBUF                        : 128
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             130  out of  126800     0%  
+ Number of Slice LUTs:                  261  out of  63400     0%  
+    Number used as Logic:               261  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    261
+   Number with an unused Flip Flop:     131  out of    261    50%  
+   Number with an unused LUT:             0  out of    261     0%  
+   Number of fully used LUT-FF pairs:   130  out of    261    49%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                         132
+ Number of bonded IOBs:                 132  out of    210    62%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 130   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.312ns (Maximum Frequency: 301.896MHz)
+   Minimum input arrival time before clock: 3.168ns
+   Maximum output required time after clock: 0.650ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 3.312ns (frequency: 301.896MHz)
+  Total number of paths / destination ports: 4623 / 132
+-------------------------------------------------------------------------
+Delay:               3.312ns (Levels of Logic = 66)
+  Source:            Output1_0 (FF)
+  Destination:       Output1_63 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: Output1_0 to Output1_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.361   0.305  Output1_0 (Output1_0)
+     LUT2:I1->O            1   0.097   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_lut<0> (Madd_Output1[63]_GND_1_o_add_19_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<0> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<1> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<2> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<3> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<4> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<5> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<6> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<7> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<8> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<9> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<10> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<11> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<12> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<13> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<14> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<15> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<16> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<17> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<18> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<19> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<20> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<21> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<22> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<23> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<24> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<25> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<26> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<27> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<28> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<29> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<29>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<30> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<30>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<31> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<31>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<32> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<32>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<33> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<33>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<34> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<34>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<35> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<35>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<36> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<36>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<37> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<37>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<38> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<38>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<39> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<39>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<40> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<40>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<41> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<41>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<42> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<42>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<43> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<43>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<44> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<44>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<45> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<45>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<46> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<46>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<47> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<47>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<48> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<48>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<49> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<49>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<50> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<50>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<51> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<51>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<52> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<52>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<53> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<53>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<54> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<54>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<55> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<55>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<56> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<56>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<57> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<57>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<58> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<58>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<59> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<59>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<60> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<60>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<61> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<61>)
+     MUXCY:CI->O           0   0.023   0.000  Madd_Output1[63]_GND_1_o_add_19_OUT_cy<62> (Madd_Output1[63]_GND_1_o_add_19_OUT_cy<62>)
+     XORCY:CI->O           1   0.370   0.295  Madd_Output1[63]_GND_1_o_add_19_OUT_xor<63> (Output1[63]_GND_1_o_add_19_OUT<63>)
+     LUT4:I3->O            1   0.097   0.000  Mmux_Output1[63]_Output1[63]_mux_20_OUT601 (Output1[63]_Output1[63]_mux_20_OUT<63>)
+     FD:D                      0.008          Output1_63
+    ----------------------------------------
+    Total                      3.312ns (2.712ns logic, 0.600ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 4620 / 132
+-------------------------------------------------------------------------
+Offset:              3.168ns (Levels of Logic = 67)
+  Source:            Reset (PAD)
+  Destination:       Output1_63 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Reset to Output1_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           259   0.001   0.521  Reset_IBUF (Reset_IBUF)
+     LUT2:I0->O            1   0.097   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_lut<0> (Madd_Output0[63]_GND_1_o_add_15_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<0> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<1> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<2> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<3> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<4> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<5> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<6> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<7> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<8> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<9> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<10> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<11> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<12> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<13> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<14> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<15> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<16> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<17> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<18> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<19> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<20> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<21> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<22> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<23> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<24> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<25> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<26> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<27> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<28> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<29> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<29>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<30> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<30>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<31> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<31>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<32> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<32>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<33> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<33>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<34> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<34>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<35> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<35>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<36> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<36>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<37> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<37>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<38> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<38>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<39> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<39>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<40> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<40>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<41> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<41>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<42> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<42>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<43> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<43>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<44> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<44>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<45> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<45>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<46> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<46>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<47> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<47>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<48> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<48>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<49> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<49>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<50> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<50>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<51> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<51>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<52> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<52>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<53> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<53>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<54> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<54>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<55> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<55>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<56> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<56>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<57> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<57>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<58> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<58>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<59> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<59>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<60> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<60>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<61> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<61>)
+     MUXCY:CI->O           0   0.023   0.000  Madd_Output0[63]_GND_1_o_add_15_OUT_cy<62> (Madd_Output0[63]_GND_1_o_add_15_OUT_cy<62>)
+     XORCY:CI->O           1   0.370   0.295  Madd_Output0[63]_GND_1_o_add_15_OUT_xor<63> (Output0[63]_GND_1_o_add_15_OUT<63>)
+     LUT5:I4->O            1   0.097   0.000  Mmux_Output0[63]_Output0[63]_mux_16_OUT601 (Output0[63]_Output0[63]_mux_16_OUT<63>)
+     FD:D                      0.008          Output0_63
+    ----------------------------------------
+    Total                      3.168ns (2.352ns logic, 0.816ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 128 / 128
+-------------------------------------------------------------------------
+Offset:              0.650ns (Levels of Logic = 1)
+  Source:            Output0_63 (FF)
+  Destination:       Output0<63> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: Output0_63 to Output0<63>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.361   0.289  Output0_63 (Output0_63)
+     OBUF:I->O                 0.000          Output0_63_OBUF (Output0<63>)
+    ----------------------------------------
+    Total                      0.650ns (0.361ns logic, 0.289ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    3.312|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.28 secs
+ 
+--> 
+
+Total memory usage is 4625888 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   62 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

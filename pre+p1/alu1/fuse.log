@@ -1,0 +1,19 @@
+Running: D:\Download\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/verilog/alu1/alu1_test_isim_beh.exe -prj D:/verilog/alu1/alu1_test_beh.prj work.alu1_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/verilog/alu1/alu.v" into library work
+Analyzing Verilog file "D:/verilog/alu1/alu1-test.v" into library work
+Analyzing Verilog file "D:/Download/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module alu
+Compiling module alu1_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\alu1_test_isim_beh.exe.sim\libPortability.dll".
+Compiled 3 Verilog Units
+Built simulation executable D:/verilog/alu1/alu1_test_isim_beh.exe
+Fuse Memory Usage: 28388 KB
+Fuse CPU Usage: 562 ms

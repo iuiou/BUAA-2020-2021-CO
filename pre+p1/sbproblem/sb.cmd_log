@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/verilog/sbproblem/sb.xst" -ofn "D:/verilog/sbproblem/sb.syr" 
+xst -intstyle ise -ifn "D:/verilog/sbproblem/sb.xst" -ofn "D:/verilog/sbproblem/sb.syr" 
+xst -intstyle ise -ifn "D:/verilog/sbproblem/sb.xst" -ofn "D:/verilog/sbproblem/sb.syr" 
+xst -intstyle ise -ifn "D:/verilog/sbproblem/sb.xst" -ofn "D:/verilog/sbproblem/sb.syr" 
+xst -intstyle ise -ifn "D:/verilog/sbproblem/sb.xst" -ofn "D:/verilog/sbproblem/sb.syr" 

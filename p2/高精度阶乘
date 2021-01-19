@@ -1,0 +1,86 @@
+.data
+ans:.space 10000
+.macro cin
+li $v0 5
+syscall
+.end_macro
+.macro cout 
+li $v0 1
+syscall
+.end_macro
+.macro return
+li $v0 10
+syscall
+.end_macro
+.macro cal_mul(%i,%j,%ans)
+mult %i %j
+mflo %ans
+.end_macro
+.macro cal_div(%i,%j,%ans,%ans2)
+div %i %j
+mflo %ans
+mfhi %ans2
+.end_macro
+.text
+    cin
+    move $s0 $v0
+    li $t0 1
+    li $s1 1#存长度
+    li $s2 10
+    sw $t0 ans($0)
+for_i:
+    bgt $t0 $s0 end_i
+    li $t1 0
+for_j:
+    beq $t1 $s1 end_j
+    sll $t2 $t1 2
+    lw $t3 ans($t2)
+    cal_mul($t3,$t0,$t3)
+    sw $t3 ans($t2)
+    addi $t1 $t1 1
+    j for_j
+end_j:
+    li $t1 0
+    li $t2 0#t2表示余数
+for_j_2:
+    beq $t1 $s1 end_j_2
+    sll $t3 $t1 2
+    lw $t4 ans($t3)
+    add $t4 $t4 $t2
+    cal_div($t4,$s2,$t2,$t4)
+    sw $t4 ans($t3)
+    addi $t1 $t1 1
+    j for_j_2
+end_j_2:
+    beq $t2 $0 con
+    sll $t3 $s1 2
+    lw $t4 ans($t3)
+    add $t4 $t4 $t2
+    cal_div($t4,$s2,$t2,$t4)
+    sw $t4 ans($t3)
+    addi $s1 $s1 1
+    j end_j_2
+con:addi $t0 $t0 1
+    j for_i
+end_i:
+    move $t0 $s1
+delete:
+    sll $t1 $t0 2
+    lw $t2 ans($t1)
+    bne $t2 0 out
+    subi $t0 $t0 1
+    j delete
+out:
+    bgt $0 $t0 end
+    sll $t1 $t0 2
+    lw $a0 ans($t1)
+    cout
+    subi $t0 $t0 1
+    j out
+end:
+    return
+    
+    
+    
+    
+

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="P7" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/CPU D:|verilog|P7|CPU.v</ClosedNode>
+         <ClosedNode>/CPU D:|verilog|P7|CPU.v/MEM_wb - mem_wb</ClosedNode>
+         <ClosedNode>/CPU D:|verilog|P7|CPU.v/NPC - nPC</ClosedNode>
+         <ClosedNode>/CPU D:|verilog|P7|CPU.v/Stall - stall_control</ClosedNode>
+         <ClosedNode>/CPU D:|verilog|P7|CPU.v/Trans - trans</ClosedNode>
+         <ClosedNode>/CPU D:|verilog|P7|CPU.v/alu - ALU</ClosedNode>
+         <ClosedNode>/CPU D:|verilog|P7|CPU.v/dm - DM</ClosedNode>
+         <ClosedNode>/CPU D:|verilog|P7|CPU.v/md - mult_div</ClosedNode>
+         <ClosedNode>/mips D:|verilog|P7|mips.v/ID_ex - id_ex</ClosedNode>
+         <ClosedNode>/mips D:|verilog|P7|mips.v/MEM_wb - mem_wb</ClosedNode>
+         <ClosedNode>/mips D:|verilog|P7|mips.v/NPC - nPC</ClosedNode>
+         <ClosedNode>/mips D:|verilog|P7|mips.v/Stall - stall_control</ClosedNode>
+         <ClosedNode>/mips D:|verilog|P7|mips.v/Trans - trans</ClosedNode>
+         <ClosedNode>/mips D:|verilog|P7|mips.v/alu - ALU</ClosedNode>
+         <ClosedNode>/mips D:|verilog|P7|mips.v/dm - DM</ClosedNode>
+         <ClosedNode>/mips D:|verilog|P7|mips.v/md - mult_div</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>mips (D:/verilog/P7/mips.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000145000000020000000000000000000000000200000064ffffffff000000810000000300000002000001450000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>mips (D:/verilog/P7/mips.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff000000810000000000000004000000760000000100000000000000600000000100000000000000780000000100000000000001840000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ALU.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000012d0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/mips_tb D:|verilog|P7|test.v/uut - mips/cpu - CPU/ID_ex - id_ex</ClosedNode>
+         <ClosedNode>/mips_tb D:|verilog|P7|test.v/uut - mips/cpu - CPU/IF_id - if_id</ClosedNode>
+         <ClosedNode>/mips_tb D:|verilog|P7|test.v/uut - mips/cpu - CPU/NPC - nPC</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/ID_ex - id_ex</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/IF_id - if_id</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/MEM_wb - mem_wb</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/NPC - nPC</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/Stall - stall_control</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/Trans - trans</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/alu - ALU</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/dm - DM</ClosedNode>
+         <ClosedNode>/mips_txt D:|verilog|P7|test.v/uut - mips/cpu - CPU/md - mult_div</ClosedNode>
+         <ClosedNode>/tb D:|verilog|P7|test.v/uut - mips/cpu - CPU/Stall - stall_control/ex_Tnew - get_tnew</ClosedNode>
+         <ClosedNode>/tb D:|verilog|P7|test.v/uut - mips/cpu - CPU/Stall - stall_control/id_Tuse - get_tuse</ClosedNode>
+         <ClosedNode>/tb D:|verilog|P7|test.v/uut - mips/cpu - CPU/Stall - stall_control/mem_Tnew - get_tnew</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/ID_ex - id_ex</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/IF_id - if_id</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/MEM_wb - mem_wb</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/NPC - nPC</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/Stall - stall_control/ex_Tnew - get_tnew</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/Stall - stall_control/id_Tuse - get_tuse</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/Stall - stall_control/mem_Tnew - get_tnew</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/Trans - trans</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/alu - ALU</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/cp0 - CP0</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/dm - DM</ClosedNode>
+         <ClosedNode>/test D:|verilog|P7|test.v/uut - mips/cpu - CPU/md - mult_div</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>grf - GRF (D:/verilog/P7/GRF.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000159000000020000000000000000000000000200000064ffffffff000000810000000300000002000001590000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>grf - GRF (D:/verilog/P7/GRF.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>

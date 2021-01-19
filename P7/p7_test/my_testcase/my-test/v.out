@@ -1,0 +1,7 @@
+WARNING: D:\verilog\P7/IFU.v:38: $readmemh: Standard inconsistency, following 1364-2005.
+WARNING: D:\verilog\P7/IFU.v:38: $readmemh(code.txt): Not enough words in the file for the requested range [0:4095].
+WARNING: D:\verilog\P7/IFU.v:39: $readmemh(code_handler.txt): Not enough words in the file for the requested range [1120:2047].
+                  45@00003000: $ 7 <= 0000fc01
+                  65@00003008: $ 5 <= 00005432
+                  75@0000300c: $ 6 <= 0000ba98
+                  85@00003010: $ 6 <= 00000000
